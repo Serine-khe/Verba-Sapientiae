@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 60 29% 94%; /* #F2F2EB */
+    --foreground: 0 40% 17%; /* #401B1B */
+
+    --card: 60 29% 94%; /* #F2F2EB */
+    --card-foreground: 0 40% 17%; /* #401B1B */
+
+    --popover: 60 29% 94%; /* #F2F2EB */
+    --popover-foreground: 0 40% 17%; /* #401B1B */
+
+    --primary: 19 44% 50%; /* #AB644B */
+    --primary-foreground: 60 29% 94%; /* #F2F2EB */
+
+    --secondary: 204 12% 66%; /* #9CABB4 */
+    --secondary-foreground: 0 40% 17%; /* #401B1B */
+
+    --muted: 210 29% 86%; /* #D2DCE6 */
+    --muted-foreground: 356 34% 33%; /* #72383D */
+
+    --accent: 356 34% 33%; /* #72383D */
+    --accent-foreground: 60 29% 94%; /* #F2F2EB */
+
+    --destructive: 0 84.2% 60.2%; /* Default red, can be customized */
+    --destructive-foreground: 210 20% 98%; /* Default white */
+
+    --border: 210 29% 86%; /* #D2DCE6 */
+    --input: 210 29% 86%; /* #D2DCE6 */
+    --ring: 19 44% 50%; /* #AB644B */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 40% 17%; /* #401B1B */
+    --foreground: 60 29% 94%; /* #F2F2EB */
+
+    --card: 0 40% 17%; /* #401B1B */
+    --card-foreground: 60 29% 94%; /* #F2F2EB */
+
+    --popover: 0 40% 17%; /* #401B1B */
+    --popover-foreground: 60 29% 94%; /* #F2F2EB */
+
+    --primary: 19 44% 50%; /* #AB644B */
+    --primary-foreground: 0 40% 17%; /* #401B1B */
+
+    --secondary: 204 12% 66%; /* #9CABB4 */
+    --secondary-foreground: 60 29% 94%; /* #F2F2EB */
+
+    --muted: 356 34% 33%; /* #72383D */
+    --muted-foreground: 210 29% 86%; /* #D2DCE6 */
+
+    --accent: 204 12% 66%; /* #9CABB4 */
+    --accent-foreground: 0 40% 17%; /* #401B1B */
+
+    --destructive: 0 62.8% 30.6%; /* Default dark red */
+    --destructive-foreground: 210 20% 98%; /* Default white */
+
+    --border: 356 34% 33%; /* #72383D */
+    --input: 356 34% 33%; /* #72383D */
+    --ring: 19 44% 50%; /* #AB644B */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
