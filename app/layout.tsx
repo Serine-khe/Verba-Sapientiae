@@ -29,10 +29,10 @@ export default function RootLayout({
       <body>
         {/* ✅ Wrap ThemeProvider in ClientOnly to avoid hydration issues */}
         <ClientOnly>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
+          <ThemeProvider attribute="class" 
+          defaultTheme="light" 
+          enableSystem={false} 
+
             disableTransitionOnChange
           >
             {children}
